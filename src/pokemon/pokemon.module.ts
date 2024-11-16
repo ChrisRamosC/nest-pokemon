@@ -10,5 +10,6 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     MongooseModule.forFeature([{ name: Pokemon.name, schema: PokemonSchema }]),
   ],
+  exports: [MongooseModule],
 })
 export class PokemonModule {}
